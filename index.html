@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Engineer IT Presentation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/sky.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/monokai.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.js"></script>
+    <style>
+      :root {
+        --r-heading-text-transform: small-caps;
+      }
+
+      body .reveal .slides {
+        font-size: 36px;
+        text-align: left;
+      }
+
+      body .reveal .slides h1 {
+        font-size: 3em;
+      }
+
+      body .reveal .slides h2 {
+        font-size: 2em;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-variant: small-caps;
+        text-align: center;
+      }
+
+      h1 code,
+      h2 code,
+      h3 code,
+      h4 code,
+      h5 code,
+      h6 code {
+        font-variant: initial;
+      }
+
+      dd {
+        margin-bottom: 2rem;
+      }
+
+      .reveal p > img {
+        display: block;
+        margin: auto;
+      }
+
+      .reveal pre code {
+        padding: 1rem;
+      }
+
+      .code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        color: grey;
+      }
+
+      .code strong {
+        color: black;
+      }
+
+      .code.no-bullet {
+        list-style: none;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+            # Custom Engineering Application Initiative
+
+            **Objective:**  
+            Develop a custom application to automate and optimize engineering workflows through cloud integration, document control, and user support.
+
+            ---
+
+            ## Index
+            1. Key Goals
+            2. Workflow automation areas
+            3. AR-Assisted Maintenance
+            4. Engineering Data & Cloud Integration
+            5. User Support & Training
+            6. File Management & Remote Access
+            7. Outcomes
+            8. Thank you
+
+            ---
+            # Key Goals
+
+            - Build a tailored custom software solution
+            - Integrate with external APIs and tools
+            - Automate critical engineering workflows
+            - Enhance user support and training
+
+            ~~~csharp
+            app.MapPost("/projects", (EngineeringProject project) =>
+                {
+                    projects.Add(project);
+                    return Results.Created($"/projects/{project.Id}", project);
+                });
+            ~~~
+
+            ---
+
+            # Workflow Automation Areas
+
+            - Drawing & Version Control  
+            - Approval Tracking  
+            - Scheduling and Cost Syncing  
+            - Integration with PM & finance tools
+
+            ![](images/shia-labeouf.gif)
+
+            ---
+
+            # AR-Assisted Maintenance
+
+            - Enable **augmented reality** for maintenance workflows  
+            - Boost accuracy and efficiency for field teams     
+            - Integrate AR with engineering processes
+
+            ![](images/augmented-reality-glasses.gif)
+
+            ---
+
+            # Engineering Data & Cloud Integration
+
+            - Centralized Engineering Document Control  
+            - Cloud platform: **Azure**  
+            - Sync with:  
+            > 1. SharePoint  
+            > 2. OneDrive  
+            > 3. Autodesk Construction Cloud (ACC)
+
+            ---
+
+            # User Support & Training
+
+            - Provide first-line and advanced support for engineers  
+            - Offer training on new tools and systems  
+            - Assist with onboarding of specialized design software
+
+
+            ```json
+                "Eng_Azure_Id": "NewGuid();",
+            ```
+
+        
+            ```json
+                "scripts": {
+                  "dev": "dotnet run"
+                },
+            ```
+
+            ---
+
+            # File Management & Remote Access
+
+            - Use SharePoint & ACC for file management  
+            - Provide remote access tools for field teams  
+            - Define update and versioning procedures
+
+            ![](images/linux-kernel-linux.gif)
+
+            ---
+
+            # Outcomes
+
+            - Streamlined collaboration and document control  
+            - Faster project approvals  
+            - Enhanced field mobility  
+            - Improved efficiency across teams
+
+            ![](images/ezgif.com-optimize.gif)
+
+            ---
+
+            # Thank You
+
+            Let’s build the future of engineering workflows—smarter, faster, and fully integrated.
+
+            ![](images/wayne's-world-wayne.gif)
+
+            ---
+
+            # Questions?
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
